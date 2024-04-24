@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eiendommelig boligformidling A/S</title>
+    <style>
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+        }
+        
+        .header {
+            padding: 60px;
+            text-align: center;
+            background: #4F6D7A;
+            color: white;
+            font-size: 30px;
+        }
+
+        a:link {
+            color:white;
+            background-color: transparent;
+            text-decoration: none;
+
+        }
+
+        a:visited {
+            color:white;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color:white;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:active {
+            color:white;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        
+        
+        
+        .content {padding:20px;}
+        
+        </style>
+</head>
+
+
+
+<body>
+    <div class="header">
+        <img src="house.png" height="200px" > 
+        <h1>Eiendommelig boligformidling</h1>
+        <p>Vi finner din drømmebolig</p>
+        <a href="om_oss.html"> |  Om oss | </a>
+        <a href="kontakt_oss.html"> | Kontakt oss | </a>
+        <a href="prospekt.html"> | Prospekter |</a>
+        
+</div>
+
+<h2>Kontakt oss</h2>
+
+<form action="/action_page.php">
+    <label for="fname ">Fornavn:</label><br>
+    <input type="text" id="fname" name="fname" placeholder="Fornavn"><br>
+    <label for="lname">Etternavn:</label><br>
+    <input type="text" id="lname" name="lname" placeholder="Etternavn"><br>
+
+<br>
+
+<form action="/action_page.php">
+    <label for="Henvendelse">Velg et alternativ:</label>
+    <select name="Kjøp" id="Kjøp">
+        <optgroup label="Kjøp">
+            <option value="Kjøp">Kjøp</option>
+        </optgroup>
+    <optgroup label="Salg">
+        <option value="Salg">Salg</option>
+    </optgroup>
+    </select>
+    <br>
+    <input type="submit" value="Submit">
+
+<h2>Skriv til oss</h2>
+    <form accept="action_page.php">
+    <textarea name="Message" rows="10" cols="30">Skriv inn hva du lurer på her.
+
+    </textarea>
+    <br><br>
+    <input type="submit">
+
+    
+
+</form>
+
+</body>
+</html>
