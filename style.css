@@ -1,0 +1,23 @@
+img {
+    width: 12%;
+    display: block;
+}
+
+.Sweden {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    
+}
+
+.Norway {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.Denmark {
+    position: relative;
+    top: 50;
+    left: 30;
+}

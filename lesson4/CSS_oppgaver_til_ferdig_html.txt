@@ -1,0 +1,14 @@
+Ta utgangspunkt i filen dere får utlevert
+
+Dere skal nå øve på å bruke CSS for å style dokumentet
+
+1) Sett farge på alle h1 headinger til blå
+2) Sett farge på alle h2 headinger til rød
+3) Sett bakgrunnsfarge på h6 headingen til å være grønn
+
+4) Sett all teksten (<p>) som ligger under en h4 overskrift til å være kursiv (altså kun den teksten som ligger under h4, ikke alle de andre)
+
+5) Det er 2 områder i teksten som er merket med tag'en <span>. Sett bakgrunnsfargen til det <span>-elementet som ligger i område 3 til å være blå.
+
+4) Fjern linjen under teksten i linkene (<a>)
+
