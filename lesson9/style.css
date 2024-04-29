@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(Hotel-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 50px;
+    font-style: oblique;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    width: 1000px;
+    background-color: black;
+
+}
+
+.flex-container > div {
+    background-color: white;
+    margin: 10px;
+    padding: 200px;
+    font-size: 30px;
+    
+}
+
+
