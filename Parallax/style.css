@@ -1,0 +1,92 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 50;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+
+body, html {
+    height: 100%;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+    padding: 20px 50px;
+    font-family: Rubik;
+    
+}
+
+#nav-title {
+    margin-right: auto;
+    font-size: 2.5em;
+    color: black;
+}
+
+header li {
+    
+    list-style: none;
+    display: inline-block;
+    padding: 20px 20px;
+    font-size: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease 0s;
+}
+
+header a:hover {
+    color: blue;
+}
+
+.headerbunnlinje {
+    margin-left: 50px;
+    margin-right: 65px;
+    text-align: left;
+    border: 2px solid black;
+}
+
+.parallax {
+    background-image: url(bilde2.JPG);
+    height: 100%;
+    margin-left: 50px;
+    margin-right: 65px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax_2 {
+    background-image: url(bilde1.JPG);
+    height: 100%;
+    margin-left: 50px;
+    margin-right: 65px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax_video {
+    background-image: url(finse.mp4);
+    margin-left: 50px;
+    margin-right: 65px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
