@@ -16,6 +16,19 @@
 <body>
     <h3 id="melding">Bytt ut dette da...</h3>
     <input type="button" value="Klikk da vel!" onclick="visMelding();">
+
+    <!--Bruk av en variabel-->
+    <p id="demo"></p>
+    
+        <script>
+            let lengde, bredde, areal;
+            lengde=6;
+            bredde=8;
+            areal= lengde * bredde;
+
+            document.getElementById("demo").innerHTML = areal;
+        </script>
+
     
 </body>
 </html>
