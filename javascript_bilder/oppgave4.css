@@ -1,0 +1,23 @@
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#hoved {
+    display: flex;
+    
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+#knappesamling {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    justify-content: space-between;
+}
+
+img {
+    width: 50%;
+    border-radius: 10px;
+}
