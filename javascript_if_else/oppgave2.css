@@ -1,0 +1,11 @@
+.verified {
+    color: aqua;
+    background-color: green;
+    padding: 4px;
+}
+
+.unverified {
+    color: aqua;
+    background-color: red;
+    padding: 4px;
+}
