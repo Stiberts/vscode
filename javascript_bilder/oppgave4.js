@@ -10,3 +10,4 @@ function knapp2() {
 function knapp3() {
     document.querySelector("img").src = "bilde_3.jpg";
 }
+
