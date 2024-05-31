@@ -16,7 +16,7 @@ function lagEpost() {
     }
 
     else {
-        document.getElementById("melding").innerHTML = `Din e-post er ${dinEpost}`;
+        document.getElementById("melding").innerHTML = `Din e-post er: ${dinEpost}`;
         document.getElementById("melding").classList.add("greenbox");
     }
 }
