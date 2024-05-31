@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oppgave 2 - Passordsjekker</title>
+    <link href="oppgave2.css" rel="stylesheet">
 </head>
 <body>
 
     <h3>Innloggingsdel Passordsjekker</h3>
 
     
-    <input type="text" id="textboks" placeholder="Skriv inn brukernavn">
+    <input type="text" id="brukernavn" placeholder="Skriv inn brukernavn">
     <input type="password" id="passord" placeholder="Skriv inn passord">
-    <button onclick="sjekkPassord()">Logg inn</button>
-    <p id="demo"></p>
-
+    <button onclick="logIn()">Logg inn</button>
     
-
+    <div id="output"></div>
 
     <script src="oppgave2.js"></script>
         
