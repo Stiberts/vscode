@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    background-color: lightskyblue;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+button {
+    font-size: 22px;
+    padding: 25px 45px;
+    background-color: lightgreen;
+    border: 5px solid white;
+    border-radius: 50px;
+}
+
+.container {
+    display: grid;
+    background-color: white;
+    font-size: 12px;
+}
+
+.output {
+    background-color: black;
+    font-size: 20px;
+}

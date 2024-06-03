@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 6 - Karakterkalkulator</title>
+    <link rel="stylesheet" href="oppgave6.css">
+</head>
+<body>
+
+    <h1>Karakterkalkulator</h1>
+
+    <div class="container">
+    <label for="norsk">Norsk:</label>
+    <input type="number" id="norsk" name="norsk" placeholder="Skriv inn din karakter"><br>
+    <label for="engelsk">Engelsk:</label>
+    <input type="number" id="engelsk" name="engelsk" placeholder="Skriv inn din karakter"><br>
+    <label for="matte">Mattematikk:</label>
+    <input type="number" id="matte" name="matte" placeholder="Skriv inn din karakter"><br>
+    <label for="naturfag">Naturfag:</label>
+    <input type="number" id="naturfag" name="naturfag" placeholder="Skriv inn din karakter"><br>
+    <label for="historie">Nyere historie:</label>
+    <input type="number" id="historie" name="historie" placeholder="Skriv inn din karakter"><br>
+    <label for="samfunn">Samfunnsfag:</label>
+    <input type="number" id="sfag" name="sfag" placeholder="Skriv inn din karakter"><br>
+    </div>
+
+    <button type="button" button onclick="mittSnitt()">Regn gjennomsnitt</button>
+
+    <div class="output">
+        <div id="utskrift"></div>
+    </div>
+
+    <script src="oppgave6.js"></script>
+    
+
+
+</body>
+</html>
