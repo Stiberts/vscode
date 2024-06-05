@@ -1,17 +1,18 @@
 let btn = document.getElementById("btn");
 let output = document.getElementById("outputtext");
+let rettTall = 69;
 
-let number = Math.floor(Math.random() * 100);
+//let number = Math.floor(Math.random() * 100);
 
 btn.addEventListener('click', function(){
     let input = document.getElementById("userInput").value;
-    if(input == number){
-        output.innerHTML = `Du gjettet riktig, nummer ditt er ${number}`;
+    if(input == rettTall){
+        output.innerHTML = `Du gjettet riktig! Tallet ditt er ${rettTall}.`;
     }
-    else if(input < number){
+    else if(input < rettTall){
         output.innerHTML = `Du gjettet for lavt tall, prøv igjen!`;
     }
-    if(input > number){
+    if(input > rettTall){
         output.innerHTML = `Du gjettet for høyt tall, prøv igjen!`;
     }
 })
