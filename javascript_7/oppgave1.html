@@ -9,14 +9,13 @@
 
     <h1>Gjett riktig resultat på Tippekampen</h1>
 
-<div id="container">
-    <h3>Brann vs Lillestrøm</h3>
-    <p id="tippevalg">Hjemme (H) | Uavgjort (U) | Borte (B) </p>
-    <input type="text" id="hub" placeholder="Ditt valg">
-    <button id="myBtn">Tipp</button>
-</div>
+    <label for="hub">Brann vs Liverpool ("H" hjemmeseier, "U" uavgjort, "B" borteseier )</label>
+    <input type="text" id="hub" placeholder="Ditt resultat">
+    <input type="button" value="TippetiTupp" onclick="sjekkTippetegn()">
+    <br><br>
+    <div id="resultat"></div>
 
-<p id="outputtext">Du tippet:</p>
+
 
 <script src="oppgave1.js"></script>
     

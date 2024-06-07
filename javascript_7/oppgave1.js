@@ -1,19 +1,17 @@
-let input = document.getElementById("hub").value;
-let output = document.getElementById("outputtext").value;
-hjemme = "H";
-uavgjort = "U";
-borte = "B";
+function sjekkTippetegn(){
+    let tippetegn = document.getElementById("hub").value;
 
-btn.addEventListener('click', function(){
-    if(input == hjemme){
-        output.innerHTML = `Du tippet ${hjemme} for hjemmeseier`;
+    if (tippetegn == 'h') {
+        document.getElementById("resultat").innerHTML = "Du valgte 'H' for hjemmerseier";
     }
-    else if(input == uavgjort){
-        output.innerHTML = `Du tippet ${uavgjort} for uavgjort`;
+    else if (tippetegn == 'U') {
+        document.getElementById("resultat").innerHTML = "Du valgte 'U' for uavgjort"; 
     }
-    else{
-        output.innerHTML = `Du tippet ${borte} for borteseier`;
+    else if (tippetegn == 'B') {
+        document.getElementById("resultat").innerHTML = "Du valgte 'B' for borteseier";
+    }
+    else {
+        document.getElementById("resultat").innerHTML = "Skriv inn et riktig tippetegn";
     }
 
-
-})
+}
