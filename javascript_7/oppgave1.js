@@ -1,7 +1,7 @@
 function sjekkTippetegn(){
     let tippetegn = document.getElementById("hub").value;
 
-    if (tippetegn == 'h') {
+    if (tippetegn == 'H') {
         document.getElementById("resultat").innerHTML = "Du valgte 'H' for hjemmerseier";
     }
     else if (tippetegn == 'U') {

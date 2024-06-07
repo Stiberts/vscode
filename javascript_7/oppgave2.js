@@ -1,15 +1,19 @@
 function sjekkTippetegn(){
-    let tippetegn = parseInt(document.getElementById("hub").value)  ;
-    let resultat = document.getElementById("resultat");
-
-    let dittResultat = "";
-
-    switch (tippetegn) {
-        case 1: dittResultat = "Du valgte 'H' ";
+    let tippetegn = document.getElementById("hub").value;
+   
+    switch (tippetegn) {    
+        case "H": document.getElementById("resultat").innerHTML = "Du valgte 'H' ";
+        case "h": document.getElementById("resultat").innerHTML = "Du valgte 'H' ";
         break;
-        case 2: dittResultat = "Du valgte 'U' ";
+        case "U": document.getElementById("resultat").innerHTML = "Du valgte 'U' ";
+        case "u": document.getElementById("resultat").innerHTML = "Du valgte 'U' ";
         break;
-        case 3: dittResultat = "Du valgte 'B' ";
+        case "B": document.getElementById("resultat").innerHTML = "Du valgte 'B' ";
+        case "b": document.getElementById("resultat").innerHTML = "Du valgte 'B' ";
+        break;
+        default: document.getElementById("resultat").innerHTML = `${tippetegn} er ikke gyldig. Vennligst skriv inn
+                                                                et gyldig tippetegn.` ;
     }
+    
 
 }
