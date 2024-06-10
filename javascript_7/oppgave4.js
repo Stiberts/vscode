@@ -1,7 +1,9 @@
 function regnBMI(){
     let vekt = document.getElementById("vekt").value;
     let hoyde = document.getElementById("hoyde").value;
-    let bmi = (vekt / ((hoyde*hoyde))).toFixed(2);
+    //let bmi = (vekt / ((hoyde*hoyde))).toFixed(2);
+    let bmi = (vekt / ((hoyde*hoyde)));
+    bmi = Math.round(bmi);
 
         if(bmi > 30){
             document.getElementById("utskrift").innerHTML = `Din BMI er ${bmi} og du har fedme.`;
