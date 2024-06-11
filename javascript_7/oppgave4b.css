@@ -75,5 +75,9 @@ body {
     font-size: 15px;
     text-align: center;
     margin: 20px 0 15px;
+    background-color: black;
+    height: 45px;
+    padding: 12px;
+    border-radius: 40px;   
 }
 
