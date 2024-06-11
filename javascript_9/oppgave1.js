@@ -46,3 +46,15 @@ function lagInitialer() {
 
     document.getElementById("output7").innerHTML = `Ditt navn er ${fNavnInit}. ${mNavnInit}. ${etternavn}`;
 }
+
+function konverterDollar() {
+    let dinDollar = document.getElementById("dollarInput").value;
+    let dollarTilnok = dinDollar * 10;
+    let moms = dollarTilnok * 25 / 100;
+    let frakt = 249;
+    let inklMoms = dollarTilnok + moms;
+    let resultat = frakt + inklMoms;
+    
+
+    document.getElementById("output8").innerHTML = `Din totalsum inklusiv frakt og mva er ${resultat} NOK `;
+}
