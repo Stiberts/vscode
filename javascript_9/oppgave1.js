@@ -1,3 +1,5 @@
+// Oppgave 1 //
+
 function sjekkAlder() {
     let dinAlder = document.getElementById("alder").value;
 
@@ -18,6 +20,8 @@ function sjekkAlder() {
     
 }
 
+// Oppgave 2 //
+
 function finnStortTall() {
     let tallNummerEn = document.getElementById("tall1").value;
     let tallNummerTo = document.getElementById("tall2").value;
@@ -30,12 +34,26 @@ function finnStortTall() {
     }
 }
 
+//  Oppgave 3 //
+
 function regnAreal() {
     let lengde = document.getElementById("lengde1").value;
     let bredde = document.getElementById("bredde1").value;
     let areal = lengde * bredde;
     document.getElementById("output3").innerHTML = `Arealet av rektangelen er ${areal} kvadratcentimeter`;
 }
+
+// Oppgave 4 //
+
+function sirkelAreal () {
+    let radiusInput = document.getElementById("sirkelRadius").value;
+    let areal = Math.PI * radiusInput^2;
+
+    document.getElementById("output4").innerHTML = `Arealet av sirkelen er ${areal}`;
+
+}
+
+//  Oppgave 7 //
 
 function lagInitialer() {
     let fornavn = document.getElementById("fnavn").value;
@@ -46,6 +64,8 @@ function lagInitialer() {
 
     document.getElementById("output7").innerHTML = `Ditt navn er ${fNavnInit}. ${mNavnInit}. ${etternavn}`;
 }
+
+// Oppgave 8 //
 
 function konverterDollar() {
     let dinDollar = document.getElementById("dollarInput").value;
