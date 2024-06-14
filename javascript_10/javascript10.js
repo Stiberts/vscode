@@ -92,8 +92,27 @@ function deleToTall() {
 
 function antallLinjer() {
     let navnInput = document.getElementById("navn").value;
-    let nummerInput = document.getElementById("nummer").value;
+    let nummerInput = parseInt(document.getElementById("nummer").value);
+    let gjentaInput = '';
 
-    
+    for (let tall = 0; tall < nummerInput; tall++) {
+        gjentaInput += navnInput + '-'; 
+    }
+
+    document.getElementById("output6").innerText = gjentaInput;
+
+}
+
+//Oppgave 7//
+
+function regnUt() {
+    let output = ' ';
+
+    for (let tall = 0; tall <= 100; tall++) {
+        let resultat = tall * tall;
+        output += `${tall} x ${tall} = ${resultat} <br>`;
+    }
+
+    document.getElementById("output6").innerHTML = output;
 
 }
