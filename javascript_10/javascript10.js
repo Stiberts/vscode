@@ -94,11 +94,13 @@ function antallLinjer() {
     let navnInput = document.getElementById("navn").value;
     let nummerInput = parseInt(document.getElementById("nummer").value);
     let gjentaInput = '';
+   
 
-    for (let tall = 0; tall < nummerInput; tall++) {
-        gjentaInput += navnInput + '-'; 
+    for (let tall = 0; tall < nummerInput; tall++) {    
+        gjentaInput += navnInput + '-';
+        
     }
-
+        
     document.getElementById("output6").innerText = gjentaInput;
 
 }
@@ -115,4 +117,36 @@ function regnUt() {
 
     document.getElementById("output6").innerHTML = output;
 
+}
+
+//Oppgave 8//
+
+function whileLoop2() {
+    let utskrift = document.getElementById("output8");
+
+    let svar = 7;
+    let i = 1;
+
+    while (i > 0) {
+        svar = svar - i;
+        i--;
+    }
+
+    utskrift.innerHTML = `Jeg er tall nr: ` + svar;
+}
+
+//Oppgave 9//
+
+function whileLoop() {
+    let utskrift = document.getElementById("output9");
+
+    let svar = 7;
+    let i = 1;
+
+    while (i > 0) {
+        svar = svar - i;
+        i--;
+    }
+
+    utskrift.innerHTML = `Jeg er tall nr: ` + svar;
 }
