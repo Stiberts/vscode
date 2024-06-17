@@ -121,7 +121,7 @@ function regnUt() {
 
 //Oppgave 8//
 
-function whileLoop2() {
+function whileLoop2 () {
     let utskrift = document.getElementById("output8");
 
     let svar = 7;
