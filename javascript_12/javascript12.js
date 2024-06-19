@@ -58,7 +58,7 @@ function printArray4() {
     utskrift.innerHTML = svar;
 }
 
-//OPPGAVE 1.e //
+//OPPGAVE 1.e  Skriver ut alle partallene //
 function printArray5() {
     
     let tall = [34,53,2,3,34,26,26,85,3,4,98,2,12];
@@ -154,7 +154,7 @@ function regnGjennomsnitt () {
     utskrift.innerHTML = `Gjennomsnittet av listen er: ` + gjennomsnitt;
 }
 
-// Oppgave 2. c (Regn ut gjennomsnitt av arrayet med reduce() metoden //
+// Oppgave 2. d (Regn ut gjennomsnitt av arrayet med reduce() metoden //
 
 function regnGjennomsnitt2 () {
     let tall = [34,53,2,-3,34,26,-26,85,3,4,98,2,-12];
@@ -162,6 +162,37 @@ function regnGjennomsnitt2 () {
 
     let gjennomsnitt = tall.reduce((a,b) => a + b, 0) / tall.length;
 
-    utskrift.innerHTML = `Gjennomsnittet av listen er: ` + (Math.round(gjennomsnitt));
+    utskrift.innerHTML = `Gjennomsnittet av listen er rundet ned til hele tallet: ` + (Math.round(gjennomsnitt));
+}
+
+// Oppgave 2. e Finn det minste tallet. Bruker reduce() metoden, og her finner jeg det minste tallet ved å
+// sammenligne verdien av "accumelator" og "currentValue" Hvis verdien av "accumelator" er mindre enn "currentValue"
+// så returnerer jeg "accumelator". Ellers blir "currentValue" returnert. //
+
+function minsteTall() {
+    let tall = [34,53,2,-3,34,26,-26,85,3,4,98,2,-12];
+    let utskrift = document.getElementById("utskrift12");
+
+    let minsteTall = tall.reduce((accumelator, currentValue) => {
+        return accumelator < currentValue ? accumelator : currentValue;
+    }) 
+
+    utskrift.innerHTML = `Det minste tallet i listen som består av tallene [${tall}] er: ` + minsteTall;
+}
+
+// Oppgave 2. e Finn summen av partallene. Bruker en for-loop for å finne partallene og legger de sammen i 
+//en variabel som jeg kaller sum. //
+function sumPartall() {
+    let tall = [34,53,2,-3,34,26,-26,85,3,4,98,2,-12];
+    let utskrift = document.getElementById("utskrift13");
+    let sum = 0;
+
+    for (let i= 0; i < tall.length; i++) {
+        if (tall[i] % 2 === 0) {
+            sum += tall[i];
+        }
+    }
+
+    utskrift.innerHTML = `Summen av partallene i listen er: ` + sum;
 }
 
