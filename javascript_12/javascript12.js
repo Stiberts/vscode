@@ -196,3 +196,36 @@ function sumPartall() {
     utskrift.innerHTML = `Summen av partallene i listen er: ` + sum;
 }
 
+// Oppgave 3. a //
+
+function finnLikeTall() {
+    let tall = [4,5,2,3,4,6,1,2,0,9,7,6,8,5,6,4,2,3,4,7,3];
+    let utskrift = document.getElementById("utskrift14");
+    let antall = {};
+
+    for (let ele of tall) {
+        if (antall[ele]) {
+            antall[ele] += 1;
+        } else {
+            antall[ele] = 1;
+        }
+    }
+    
+    utskrift.innerHTML = antall;
+}   
+
+// Oppgave 4. //
+
+function checkMonth() {
+    let daysInMonths = [31,28,30,31,30,31,30,31,30,31,30,31];
+    let monthNames = ["Januar", "Februar", "Mars", "April", "Mai", "Juni", "July", "August", "September", "Oktober", "November", "Desember"];
+    let month = Number(document.getElementById("inputBox").value);
+
+    if (month < 1 || month > 12) {
+        document.getElementById("utskrift15").innerText = `Skriv inn et tall mellom 1 - 12`;
+        document.getElementById("inputBox").value = "";
+        return;
+    }
+    document.getElementById("utskrift15").innerText = `Det er ${daysInMonths[month-1]} dager i ${monthNames[month-1]}`;
+    
+}
