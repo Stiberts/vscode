@@ -11,7 +11,7 @@ function petInfo() {
     
     },{ 
         navn: "Pusi",
-        dyreart: "att",
+        dyreart: "katt",
         rase: "Norsk Skogskatt",
         fodselAar: 1992,
         forelder: "Sir Meows-alot",
@@ -32,10 +32,11 @@ function petInfo() {
     ];
 
     for (let i = 0; i < mineDyr.length; i++ ) {
-        utskrift += `${mineDyr[i].navn} er en ${mineDyr[i].dyreart} og ble født i ${mineDyr[i].fodselAar} og er altså ${2024 - mineDyr[i].fodselAar} år gammel\n`;
+        utskrift += `<p> ${mineDyr[i].navn} er en ${mineDyr[i].dyreart} og ble født i ${mineDyr[i].fodselAar} og er altså ${2024 - mineDyr[i].fodselAar} år gammel </p> \n`;
+        utskrift += `<hr>`;
     }
 
-    document.getElementById("utskrift1").innerText = utskrift;
+    document.getElementById("utskrift1").innerHTML = utskrift;
     
 }
 
@@ -88,3 +89,48 @@ function duckInfo() {
     document.getElementById("utskrift2").innerHTML = utskrift;
 }
 
+// Oppgave 2.b //
+
+function duckEpost() {
+    let utskrift = "";
+
+    let familienDuck = [{
+        fornavn: "Donald",
+        etternavn: "Duck",
+        adresse: "Andebyveien 1",
+        poststed: "Andeby",
+        telefon: {mobil: 12345678, hjem: 11112222},
+        epost: "donald@duck.co",
+    },
+     
+    {
+        fornavn: "Ole",
+        etternavn: "Duck",
+        adresse: "Andebyveien 1",
+        poststed: "Andeby",
+        telefon: {mobil: 12312345, hjem: 11112222},
+        epost: "ole@duck.co",
+    },
+    {
+        fornavn: "Dole",
+        etternavn: "Duck",
+        adresse: "Andebyveien 1",
+        poststed: "Andeby",
+        telefon: {mobil: 12362865, hjem: 11112222},
+        epost: "dole@duck.co",
+    },
+    {
+        fornavn: "Doffen",
+        etternavn: "Duck",
+        adresse: "Andebyveien 1",
+        poststed: "Andeby",
+        telefon: {mobil: 12782399, hjem: 11112222},
+        epost: "doffen@duck.co",
+    },
+    ];
+    for(let i = 0; i < familienDuck.length; i++) {
+        utskrift += `<p> E-postadressen til ${familienDuck[i].fornavn} er: ${familienDuck[i].epost}</p>`;
+        utskrift += `<hr>`;
+    }
+    document.getElementById("utskrift3").innerHTML = utskrift;
+}
