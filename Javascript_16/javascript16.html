@@ -8,22 +8,38 @@
 <body>
 
     <!-- Oppgave 1. Local.storage -->
-    <h3>Oppgave 1 - Local.storage</h3>
+    <h2>Oppgave 1 - Local.storage</h2>
     <input type="text" id="fornavn" placeholder="Fornavn"> <p> </p>
     <input type="text" id="etternavn" placeholder="Etternavn"> <p> </p>
-    <button type="submit" id="btn" onclick="savetoStorage()">Lagre til Local Storage</button> <p></p>
+    <button type="submit" id="btn" onclick="oppstart()">Lagre til Local Storage</button> <p></p>
     <button type="submit" id="btn1" onclick="getfromStorage()">Hent fra Local Storage</button>
     <div id="utskrift"></div>
 
     <!-- Oppgave 2. Local.storage - Bakgrunnsfarge-->
-    <h2>Oppgave 2 - Local.storage - Bakgrunnsfarge</h2>
+    <h2>Oppgave 2 - Local.storage - Bakgrunnsfarge på nettside</h2>
     <label for="farger">Velg farge</label>
-    <select name="farger" id="farger">Velg farge
-        <option value="green">Grønn</option>
-        <option value="blue">Blå</option>
-        <option value="red">Rød</option>
+    <select name="velgfarger" id="velgfarger">Velg farge>
+        <option value="#748067">Grønn</option>
+        <option value="#ABDAE1">Blå</option>
+        <option value="#CD8987">Rød</option>
     </select>
+    <button type="submit" id="btn2" onclick="settBakgrunnsFarge()">Velg Bakgrunnsfarge</button>
+    <button type="reset" id="btn2">Reset</button>
+
+    <!--Oppgave 3 a. Tekst-fil med fetch()metoden-->
+    <h2>Oppgave 3 a. Lese tekst-fil med fetch()metoden</h2>
+    <label for="tekst-fil">Min tipp-topp secret tekstfil</label>
+    <button type="submit" id="btn3" onclick="lesTekstFil()">Les Tekstfil</button>
     <div id="utskrift2"></div>
+
+    <!--Oppgave 3 b. Beregninger av innholdet i tekstfil-->
+    <h2>Oppgave 3.b Beregn total og gjennomsnitt av innhold i tekstfil</h2>
+    <label for="tekstfil">Total av tekstfil</label>
+    <button type="submit" id="btn3" onclick="beregnTotal()">Beregn Total</button>
+    <label for="tekstfil">Gjennomsnitt av tekstfil</label>
+    <button type="submit" id="btn4" onclick="beregnGjennomsnitt()">Beregn Gjennomsnitt</button>
+    <div id="utskrift3"></div>
+    
 
  
 
