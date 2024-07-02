@@ -1,0 +1,37 @@
+[
+    {   
+        "id":1,
+        "land":"Argentina",
+        "flagg":"https://www.infoplease.com/sites/infoplease.com/files/public%3A/argentin.gif",
+        "hovedstad":"Buenos Aires",
+        "innbyggere":"46,245,668"
+    },
+    {   
+        "id":2,
+        "land":"Barbados",
+        "flagg":"https://www.infoplease.com/sites/infoplease.com/files/public%3A/barbados.gif",
+        "hovedstad":"Bridgetown",
+        "innbyggere":"289,680"
+    },
+    {   
+        "id":3,
+        "land":"Cameroon",
+        "flagg":"https://www.infoplease.com/sites/infoplease.com/files/public%3A/cameroon.gif",
+        "hovedstad":"Yaoundè",
+        "innbyggere":"23,130,708"
+    },
+    {
+        "id":4,
+        "land":"Finland",
+        "flagg":"https://www.infoplease.com/sites/infoplease.com/files/public%3A/finland.gif",
+        "hovedstad":"Helsinki",
+        "innbyggere":"5,268,799"
+    },
+    {
+        "id":5,
+        "land":"Mongolia",
+        "flagg":"https://www.infoplease.com/sites/infoplease.com/files/public%3A/mongol.gif",
+        "hovedstad":"Ulaan Baator",
+        "innbyggere":"2,953,190"
+    }
+]
