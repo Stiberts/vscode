@@ -1,0 +1,37 @@
+[
+    {
+        "id":1,
+        "navn":"Diego Jota",
+        "alder":"28",
+        "posisjon":"Angrep",
+        "lag":"Liverpool FC"
+    },
+    {
+        "id":2,
+        "navn":"Mohamed Salah",
+        "alder":"32",
+        "posisjon":"Angrep",
+        "lag":"Liverpool FC"  
+    },
+    {
+        "id":3,
+        "navn":"Erling Haaland",
+        "alder":"23",
+        "posisjon":"Angrep",
+        "lag":"Manchester City"
+    },
+    {
+        "id":4,
+        "navn":"Kylian Mbappe",
+        "alder":"25",
+        "posisjon":"Angrep",
+        "lag":"Real Madrid"
+    },
+    {
+        "id":5,
+        "navn":"Virgil van Dijk",
+        "alder":"32",
+        "posisjon":"Forsvar",
+        "lag":"Liverpool FC"
+    }
+]

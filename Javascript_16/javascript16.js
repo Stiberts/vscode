@@ -81,6 +81,27 @@ function beregnTotal() {
         .catch((error) => console.error('Error: ', error ));
 }
 
+// Oppgave 4. Hent og vis info fra Json-fil //
+
+function favSpillere() {
+    let utskrift = document.getElementById("utskrift4");
+
+    fetch('Spillere.json')
+        .then((res) => res.json())
+        .then((data) => {
+            utskrift.innerHTML += `<br> Mine Favorittfotballspillere: <br>`;
+            data.forEach((spiller) => {utskrift.innerHTML += `
+                <ul>
+                    <li><h4>Navn: ${spiller.navn}</h4></li>
+                    <li><h4>Alder: ${spiller.alder}</h4></li>
+                    <li><h4>Posisjon: ${spiller.posisjon}</h4></li>
+                    <li><h4>Lag: ${spiller.lag}</h4></li>
+                    <hr><hr>
+            `}) 
+        });
+
+        
+}
 
 
 
