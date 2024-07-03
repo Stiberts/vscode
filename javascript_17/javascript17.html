@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript - 17 Oppgavesett</title>
+    <style> 
+        #btn {
+            background-color: lightsteelblue;
+            padding: 5px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
 
@@ -14,10 +21,28 @@
     <div id="utskrift"></div>
 
     <!--Oppgave 1 b. Bruker Async og Awaut-->
-    <h2>Oppgave 1 A. Landinfo fra Json-fil med Async og Await</h2>
+    <h2>Oppgave 1 B. Landinfo fra Json-fil med Async og Await</h2>
     <label for="Jsonfil">-----></label>
-    <button type="submit" id="btn2" onclick="landInfo2()">Vis info</button>
+    <button type="submit" id="btn" onclick="landInfo2()">Vis info</button>
     <div id="utskrift2"></div>
+
+    <!--Oppgave 2 A. Innholdet av en JSON-fil via API (fetch & .then)-->
+    <h2>Oppgave 2 A. JSON-fil fra API med fetch() og .then() metoden</h2>
+    <label for="Jsonfil">OBS! Ganske lang liste -----></label>
+    <button type="submit" id="btn" onclick="hentAPI()">Vis info</button>
+    <div id="utskrift3"></div>
+
+    <!--Oppgave 2 B. Innholdet av en JSON-fil via API (Async & Await)-->
+    <h2>Oppgave 2 B. JSON-fil fra API med Async & Await metoden</h2>
+    <label for="Jsonfil">OBS! Ganske lang liste -----></label>
+    <button type="submit" id="btn" onclick="hentAPI2()">Vis info</button>
+    <div id="utskrift4"></div>
+
+    <!--Oppgave 3. Array med strømpriser-->
+    <h2>Oppgave 3. Array med strømpriser</h2>
+    <label for="Jsonfil">-----></label>
+    <button type="submit" id="btn" onclick="stromPriser()">Vis priser</button>
+    <div id="utskrift5"></div>
 
     <script src="javascript17.js"></script>
     
