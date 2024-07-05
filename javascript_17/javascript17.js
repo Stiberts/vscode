@@ -117,9 +117,8 @@ let priserOverTo = strom.filter(item => item > 2).toSorted((a,b) => a - b);
 
 utskrift.innerHTML = `
 Total strømpris: ${Math.round(total)} kr,- <br> 
-Gjennomsnittspris: ${Math.round(gjennomsnitt)} kr,- <br> 
-Priser over kr.2,- (stigende order): ${priserOverTo.join(', ')}
+Gjennomsnittlig strømpris: ${Math.round(gjennomsnitt)} kr,- <br> 
+Strømpriser over 2,- (stigende rekkefølge): ${priserOverTo.join(', ')}
 `;
-
 
 }
