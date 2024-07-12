@@ -7,18 +7,16 @@ body {
     padding: 0;
     box-sizing: border-box;
     
-    
 }
 
 header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 10px 10px;
+    margin: 10px 10px 0 10px;
     background-color: white;
-    padding: 20px 50px;
+    padding: 50px 50px;
    
-    
 }
 
 #nav-title {
@@ -34,6 +32,7 @@ header {
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
+    
 }
 
 .card {
@@ -63,7 +62,6 @@ header li {
 
 header a {
     text-decoration: rgba(0, 0, 0, 0);
-    transition: text-decoration-color 500ms;
     color: black;
     transition: all 0.2s ease 0s;
 }
@@ -76,42 +74,50 @@ header a:hover {
     
 }
 
-#content {
-    width: 400px;
-    background:#fff;
-    padding: 20px;
-    padding-top: 0;
-    font-size: 18px;
-    color: #444;
-    margin: 0 auto;
-
-    max-height: 400px;
+.container {
+    margin: 10px 10px;
+    display: flex;
+    align-items: center;
+    height: 100vh;
     overflow: hidden;
-
-    -webkit-transition: max-height 0.7s;
-    -moz-transition: max-height 0.7s;
-    transition: max-height 0.7s;
-
 }
 
-#content.open {
-    max-height: 1000px;
-
-    -webkit-transition: max-height 0.7s;
-    -moz-transition: max-height 0.7s;
-    transition: max-height 0.7s;
+.scroll {
+    white-space: nowrap;
+    margin: 0;
 }
 
-#show-more {
-    background-color: #159;
-    color: #fff;
-    display: block;
-    width: 140px;
-    font-size: 20px;
-    text-transform: uppercase;
-    padding: 10px ;
-    text-align: center;
-    margin: 20px auto;
-    cursor: pointer;
+.scroll div {
+    display: flex;
+    
 }
+
+.scroll p {
+    font-size: 35em;
+    color: black;
+    font-weight: bold;
+    line-height: 100px;
+}
+
+.RightToLeft {
+    animation: RightToLeft 40s infinite linear;
+}
+
+@keyframes RightToLeft {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translate(-100%);
+    }
+}
+
+#map {
+    height: 400px; /* The height is 400 pixels */
+    width: 100%; /* The width is the width of the web page */
+}
+
+
+
+
 
