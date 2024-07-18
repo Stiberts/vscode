@@ -1,0 +1,23 @@
+ body {
+   height: 900px; 
+   text-align: center;
+   background-image: linear-gradient(to right, #0989f9, #42dccc);
+ }
+ 
+ .container-landing {
+   display: flex; 
+   position: absolute;
+   top: 50%;
+   left: 65%;
+   width: 100%;
+   transform: translate(-50%, -50%);
+ }
+ 
+ .txt {
+   display: flex;
+   font-size: 100px;
+   color: white;
+ }
+ 
+
+ 

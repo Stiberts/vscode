@@ -6,7 +6,7 @@ let map;
 
 async function initMap() {
   // The location of Bergen
-  const position = { lat: 60.397076, lng: 5.324383 };
+  let position = { lat: 60.397076, lng: 5.324383 };
   // Request needed libraries.
   //@ts-ignore
   const { Map } = await google.maps.importLibrary("maps");
@@ -22,11 +22,68 @@ async function initMap() {
   });
 
   // The marker, positioned at Bergen
-  const marker = new AdvancedMarkerElement({
+  let marker = new AdvancedMarkerElement({
     map: map,
     position: position,
-    title: "Uluru",
+    title: "Bergen",
   });
 }
 
 initMap();
+
+async function changeToArea51() {
+    let position2 = {lat: 37.2343, lng: -115.8067};
+
+    const { Map } = await google.maps.importLibrary("maps");
+    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+    map = new Map(document.getElementById("map"), {
+      zoom: 13,
+      center: position2,
+      mapId: "DEMO_MAP_ID",
+
+    });
+
+    let marker = new AdvancedMarkerElement({
+      map: map,
+      position: position2,
+    });
+}
+
+async function changeToTokyo() {
+  let position3 = {lat: 35.652832, lng: 139.839478};
+
+  const { Map } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+  map = new Map(document.getElementById("map"), {
+    zoom: 13,
+    center: position3,
+    mapId: "DEMO_MAP_ID",
+
+  });
+
+  let marker = new AdvancedMarkerElement({
+    map: map,
+    position: position3,
+  });
+}
+
+async function changeToSvalbard() {
+  let position4 = {lat: 79.004959, lng: 17.666016};
+
+  const { Map } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+  map = new Map(document.getElementById("map"), {
+    zoom: 6,
+    center: position4,
+    mapId: "DEMO_MAP_ID",
+
+  });
+
+  let marker = new AdvancedMarkerElement({
+    map: map,
+    position: position4,
+  });
+}

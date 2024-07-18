@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hovedoppgave</title>
     <link rel="stylesheet" href="startside_style.css">
-    <link rel="stylesheet" href="api_googlemaps.css">
+    <link href="landing.css" rel="stylesheet">
+   
     
 </head>
 
 <body>
 
-<!--Navbar-->
-    
+    <!--Navbar-->
     <header>
         <div class="card">
             <img src="meg.png" alt="bakside">
@@ -34,21 +34,11 @@
         </nav>
     </header>
 
-<h1>Kart fra Google</h1>
-<!--Google Maps-->
-<!--The div element for the map -->
-<div id="map"></div>
-
-<!--Centered buttons-->
-
-<div class="center">
-    <button type="submit" id="btn" onclick="changeToArea51()">Area 51</button>
-    <button type="submit" id="btn" onclick="changeToTokyo()">Tokyo</button>
-    <button type="submit" id="btn" onclick="changeToSvalbard()">Svalbard</button>
-</div>
-
-<script src="api_googlemaps.js"></script>
+    <div class="container-landing">
+        <span class="txt anim-text-flow">Utviklerkurs 2024</span>
+      </div>
     
+    <script src="landing.js"></script>
 
 </body>
 </html>

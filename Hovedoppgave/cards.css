@@ -1,0 +1,45 @@
+* {
+    font-family: Inter;
+    box-sizing: border-box;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.cards {
+    width: 325px;
+    padding: 20px 20px 20px 20px;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+.cards img {
+    margin: 20px 35px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #5f9800;
+    padding: 50px 10px 20px 50px;
+}
+
+h3 {
+    color: #5f9800;
+    padding: 10px 20px 10px 0px;
+}
+
+.cards-container-XL {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+

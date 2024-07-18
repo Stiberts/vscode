@@ -1,12 +1,13 @@
 #content {
-
-    width: 400px;
+       
+    width: 900px;
     background:#fff;
     padding: 20px;
-    padding-top: 0;
+    padding-top: 10px;
     font-size: 18px;
     color: #444;
     margin: 10px auto;
+    border-radius: 20px;
 
     max-height: 400px;
     overflow: hidden;
@@ -26,7 +27,7 @@
 }
 
 #show-more {
-    background-color: #159;
+    background-color: #34b4a7;
     color: #fff;
     display: block;
     width: 140px;
@@ -36,5 +37,13 @@
     text-align: center;
     margin: 20px auto;
     cursor: pointer;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #34b4a7;
+    padding: 50px 10px 20px 50px;
 }
 

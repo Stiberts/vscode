@@ -1,8 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+
 body {
     background: #eee;
 }
 
 * {
+    font-family: Inter;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,9 +19,8 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 10px 10px 0 10px;
     background-color: white;
-    padding: 50px 50px;
+    padding: 10px 20px;
    
 }
 
@@ -23,12 +28,13 @@ header {
     display: inline-block;
     margin-right: auto;
     padding: 10px;
-    font-size: 2.5em;
+    font-size: 1.5em;
+    font-weight: 600;
     color: black;
 }
 
 #nav-title:hover {
-    color: #159;
+    color: #34b4a7;
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
@@ -56,10 +62,11 @@ header {
 } 
 
 header li {
+    font-weight: 300;
     list-style: none;
     display: inline-block;
-    padding: 20px 20px;
-    font-size: 20px;
+    padding: 20px 20px 20px;
+    font-size: 16px;
 }
 
 header a {
@@ -69,7 +76,7 @@ header a {
 }
 
 header a:hover {
-    color: #159;
+    color: #34b4a7;
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
@@ -77,8 +84,7 @@ header a:hover {
 }
 
 .container {
-    background: yellow;
-    margin: 10px 10px;
+    margin: 10px 10px 0 10px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -98,7 +104,8 @@ header a:hover {
 
 .scroll p {
     font-size: 35em;
-    color: black;
+    fill: none;
+    stroke-width: 3;
     font-weight: bold;
     line-height: 100px;
 }

@@ -1,0 +1,40 @@
+.bilde-container {
+    background-color: white;
+    display: flexbox;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1224px;
+    width: 100%;
+    margin: 30px;
+    columns: 3;
+    gap: 10px;
+    
+}
+
+.bilde-galleri {
+    display: flex;
+    gap: 10px
+}
+
+.kolonne {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bilde img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #0056d2;
+    padding: 50px 10px 20px 50px;
+}
+
